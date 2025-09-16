@@ -1,0 +1,38 @@
+.btn-outline {
+	background: none;
+	color: #374151;
+	border: 2px solid #b721ff;
+	border-radius: 8px;
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.btn-outline:hover {
+	background: #b721ff22;
+	color: #b721ff;
+	border-color: #21d4fd;
+}
+.btn-primary {
+	background: linear-gradient(90deg, #21d4fd 0%, #b721ff 100%);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	box-shadow: 0 2px 8px #b721ff22;
+	transition: background 0.2s, transform 0.2s;
+}
+.btn-primary:hover {
+	background: linear-gradient(90deg, #b721ff 0%, #21d4fd 100%);
+	transform: scale(1.05);
+}
+/* using shared tokens */
+.flashcards-container { max-width: 700px; display: grid; gap: 1rem; justify-items: center; }
+.flashcard { padding: 2rem; min-height: 160px; display: grid; place-items: center; cursor: pointer; text-align: center; }
+.flashcard .face { font-size: clamp(1.1rem, 2.5vw, 1.4rem); color: var(--text); }
+.flashcard .face.answer { color: var(--primary-dark); font-weight: 600; }
+.controls { display: flex; gap: 0.75rem; }

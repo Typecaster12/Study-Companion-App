@@ -1,0 +1,91 @@
+:root {
+/* Animated gradient for glassmorphism backgrounds */
+.animated-gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(120deg, #4F46E5 0%, #818CF8 33%, #0071e3 66%, #00e3c2 100%);
+  opacity: 0.95;
+  animation: gradientMove 7s ease-in-out infinite;
+  background-size: 300% 300%;
+  filter: blur(40px) saturate(200%);
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+  --primary: #4F46E5;
+  --primary-light: #818CF8;
+  --primary-dark: #4338CA;
+  --background: #F8FAFC;
+  --text: #1F2937;
+  --text-light: #6B7280;
+  --white: #FFFFFF;
+  --border: #E5E7EB;
+  --surface: #FFFFFF;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+}
+
+/* Base page layout helpers */
+.page {
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.page-title {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.page-subtitle {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: var(--text-light);
+  text-align: center;
+  margin: 0 auto var(--spacing-xl);
+  max-width: 700px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+}
+
+.text-muted { color: var(--text-light); }

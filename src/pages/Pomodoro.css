@@ -1,0 +1,5 @@
+/* using shared tokens */
+.pomodoro-container { max-width: 700px; }
+.pomodoro-timer { padding: 2rem; text-align: center; }
+.pomodoro-timer .time { font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; color: var(--text); margin-bottom: 1rem; }
+.controls { display: flex; gap: 0.75rem; justify-content: center; }

@@ -1,0 +1,182 @@
+/* Apple-inspired Help page styling */
+:root {
+  --apple-gray-50: #f9f9f9;
+  --apple-gray-100: #f2f2f2;
+  --apple-gray-200: #e6e6e6;
+  --apple-gray-300: #d1d1d1;
+  --apple-gray-400: #a8a8a8;
+  --apple-gray-500: #737373;
+  --apple-gray-600: #555555;
+  --apple-gray-700: #404040;
+  --apple-gray-800: #262626;
+  --apple-gray-900: #171717;
+  --apple-blue: #0071e3;
+  --apple-blue-dark: #0051a2;
+  --apple-blue-light: rgba(0, 113, 227, 0.1);
+  --apple-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.apple-help-page {
+  background-color: var(--apple-gray-50);
+  min-height: 100vh;
+  font-family: var(--apple-font);
+  padding: 2rem 1rem 4rem;
+}
+
+.apple-help-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.apple-help-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.apple-help-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--apple-gray-900);
+  margin: 1rem 0 0.5rem;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.apple-help-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.apple-help-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--apple-gray-900);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.apple-help-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.apple-help-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--apple-gray-900);
+  margin: 0 0 1rem;
+}
+
+.apple-help-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--apple-gray-700);
+  margin: 0 0 1.25rem;
+}
+
+.apple-help-card p:last-child {
+  margin-bottom: 0;
+}
+
+.apple-help-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.apple-help-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.apple-help-step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--apple-blue);
+  color: white;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.apple-help-step-content {
+  padding-top: 0.25rem;
+  color: var(--apple-gray-800);
+}
+
+.apple-help-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.apple-help-list li {
+  margin-bottom: 0.5rem;
+  color: var(--apple-gray-700);
+}
+
+.apple-help-list li:last-child {
+  margin-bottom: 0;
+}
+
+.apple-help-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.apple-help-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.apple-help-contact-icon {
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--apple-gray-100);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.apple-help-contact-info {
+  flex: 1;
+}
+
+.apple-help-contact-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--apple-gray-900);
+  margin: 0 0 0.25rem;
+}
+
+.apple-help-contact-info p {
+  font-size: 0.875rem;
+  color: var(--apple-gray-600);
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .apple-help-title {
+    font-size: 2rem;
+  }
+  
+  .apple-help-card {
+    padding: 1.5rem;
+  }
+}
