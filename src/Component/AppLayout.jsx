@@ -70,7 +70,6 @@ const AppLayout = () => {
         border: '1.2px solid rgba(52,199,89,0.18)',
         transition: 'box-shadow 0.2s',
         overflow: 'hidden',
-        position: 'fixed',
       }}>
         <YouTube
           videoId={playlists[playlistIdx].videoId}
