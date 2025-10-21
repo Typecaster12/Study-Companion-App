@@ -6,7 +6,7 @@ import './Chatbot.css';
 const OLLAMA_API_URL = 'http://localhost:11434/api/chat';
 const OLLAMA_MODEL = 'qwen3:8b';
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const GROQ_API_KEY = process.env.REACT_APP_GROQ_API_KEY || '';
+const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY || '';
 
 // Available Groq models
 const GROQ_MODELS = [
